@@ -12,5 +12,5 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  array.detect { |cheese| cheese cheese_types }
+  array.detect { |cheese| cheese.between?(cheese_types) }
 end
